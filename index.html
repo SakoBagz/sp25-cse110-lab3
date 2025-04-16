@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fake Meeting Minutes</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Meeting minutes for fake meeting">
+  <link rel="icon" href="favicon">
+</head>
+<body>
+
+  <header>
+    <h1><b>Fake Meeting Minutes</b></h1>
+    <h2>Topic: Brainstorming</h2>
+    <h3>Date: April 15, 2025</h3>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#attendance">Attendance</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#unfinished">Unfinished Business</a></li>
+      <li><a href="#new">New Business</a></li>
+      <li><a href="#misc">Comments</a></li>
+      <li><a href="#media">Media</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="attendance">
+      <h2>Attendance List</h2>
+      <ul>
+        <li><span>Sarkis</span></li>
+        <li>Menko</li>
+        <li>Krystal</li>
+        <li>Powell</li>
+      </ul>
+    </section>
+
+    <section id="agenda">
+      <h2>Meeting Agenda</h2>
+      <ol>
+        <li>Discuss project goals</li>
+        <li>Outline features</li>
+        <li>Decide on initial tech stack</li>
+        <li>Assign tasks</li>
+      </ol>
+    </section>
+
+    <section id="unfinished">
+      <h2>Unfinished Business</h2>
+      <p>Lab 2 is still not completed.</p>
+    </section>
+
+    <section id="new">
+      <h2>New Business</h2>
+      <p>Group warm-up assignment for the project teams to be completed.</p>
+    </section>
+
+    <section id="misc">
+      <h2>Miscellaneous Comments</h2>
+      <div>
+      <p><strong>Menko:</strong> <i>We should consider accessibility from the start.</i></p>
+      <p><strong>Krystal:</strong> <em>Let’s explore different approaches.</em></p>
+      </div>
+    </section>
+
+    <section id="media">
+      <h2>Meeting Media</h2>
+      <h3>Important Whiteboard Diagram hehe</h3>
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F48%2F76%2F66%2F487666b0a8af475073c1aa5101b84552.jpg&f=1&ipt=ec3d42a7ffbb4685dac7c5e892a5f0e5dbcf1f873e87ac334e7566242b102b7c" alt="A whiteboard image I liked">
+
+      <h3>Audio Recording</h3>
+      <audio controls>
+        <source src="Media/30saudio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video Recording</h3>
+      <video controls width="320" height="240">
+        <source src="Media/waterfallvid.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+  </main>
+
+  <hr>
+
+  <details>
+    <summary>Click here to view brainstorming notes summary</summary>
+    <p>The team had a productive meeting.</p>
+  </details>
+
+  <footer>
+    <h3>Feedback Form</h3>
+    <form>
+      <fieldset>
+        <legend>Meeting Feedback</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="date">Meeting Date:</label>
+        <input type="date" id="date" name="meeting-date"><br><br>
+
+        <p>Was the meeting useful?</p>
+        <input type="radio" id="yes" name="useful" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="useful" value="no">
+        <label for="no">No</label><br><br>
+
+        <p>Select applicable tags:</p>
+        <input type="checkbox" id="tag1" name="tag" value="productive">
+        <label for="tag1">Productive</label>
+        <input type="checkbox" id="tag2" name="tag" value="lengthy">
+        <label for="tag2">Lengthy</label><br><br>
+
+        <label for="comment">Comments:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="40"></textarea><br><br>
+
+        <label for="category">Meeting Type:</label>
+        <select id="category" name="category">
+          <option value="brainstorm">Brainstorm</option>
+          <option value="sprint">Sprint Planning</option>
+          <option value="retro">Retrospective</option>
+        </select><br><br>
+
+        <label for="level">Rate the meeting:</label>
+        <input list="levels" id="level" name="level">
+        <datalist id="levels">
+          <option value="Excellent">
+          <option value="Good">
+          <option value="Average">
+          <option value="Poor">
+        </datalist><br><br>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </footer>
+
+</body>
+</html>
