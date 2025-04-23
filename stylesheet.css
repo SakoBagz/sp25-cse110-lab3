@@ -72,7 +72,6 @@ input[type="text"], input[type="date"] {
 }
 
 /* Pseudo-class selectors */
-/* Added fallback to ensure valid color value */
 a:hover {
   color: var(--primary-mix, #800080);
 }
@@ -109,9 +108,18 @@ nav ul {
   flex-wrap: wrap;
 }
 
-/* Flattened nested selector */
+/* Flattened nested selector for broader support */
 nav ul li a {
   color: var(--accent-color-hsl);
+}
+
+/* Nested selectors (CSS nesting) */
+@nest nav & ul {
+  & li {
+    & a {
+      color: var(--accent-color-hsl);
+    }
+  }
 }
 
 /* Auto margin centering */
