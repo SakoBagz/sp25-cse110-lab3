@@ -10,7 +10,6 @@
   --accent-color-hsla: hsla(120, 60%, 50%, 0.7); /* hsla */
   --secondary-rgba: rgba(255, 165, 0, 0.8); /* rgba */
   --wider-gamut: color(display-p3 0.2 0.6 0.8); /* wider-gamut */
-  --primary-mix: color-mix(in srgb, red 50%, blue 50%); /* color-mix */
   --fallback-color: lightgray; /* color name */
 }
 
@@ -73,8 +72,9 @@ input[type="text"], input[type="date"] {
 }
 
 /* Pseudo-class selectors */
+/* Added fallback to ensure valid color value */
 a:hover {
-  color: var(--primary-mix);
+  color: var(--primary-mix, #800080);
 }
 a:active {
   text-decoration: underline;
@@ -107,6 +107,11 @@ nav ul {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+/* Flattened nested selector */
+nav ul li a {
+  color: var(--accent-color-hsl);
 }
 
 /* Auto margin centering */
@@ -200,15 +205,6 @@ strong, em {
 section:has(img) {
   border: 2px dashed purple;
   padding: 1em;
-}
-
-/* Nested selectors (CSS nesting) */
-@nest nav & ul {
-  & li {
-    & a {
-      color: var(--accent-color-hsl);
-    }
-  }
 }
 
 /* Combining two selectors */
